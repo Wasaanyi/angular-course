@@ -17,8 +17,7 @@ import {CoursesService} from '../services/courses.service';
     templateUrl: './course-card.component.html',
     styleUrls: ['./course-card.component.css'],
 })
-export class CourseCardComponent implements OnInit,
-  AfterContentChecked,AfterViewChecked ,OnDestroy, AfterContentInit, AfterViewInit, DoCheck{
+export class CourseCardComponent implements OnInit, AfterContentChecked,AfterViewChecked ,OnDestroy, AfterContentInit, AfterViewInit, DoCheck{
 
     @Input()
     course: Course;

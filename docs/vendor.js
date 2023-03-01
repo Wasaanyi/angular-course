@@ -14865,7 +14865,7 @@ class PreloadLinkCreator {
     this.document = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(DOCUMENT);
   }
   /**
-   * @description Add a preload `<link>` to the `<head>` of the `404.html` that is served from the
+   * @description Add a preload `<link>` to the `<head>` of the `index.html` that is served from the
    * server while using Angular Universal and SSR to kick off image loads for high priority images.
    *
    * The `sizes` (passed in from the user) and `srcset` (parsed and formatted from `ngSrcset`)
