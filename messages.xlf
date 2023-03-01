@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="7a0365e79a11224ac02c4287dbead705ca436a00" datatype="html">
+        <source>Edit course</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a427390999e5c6dba858243a317cc8624f6af551" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {No courses available.} =1 {One course is available} other {A total of <x id="INTERPOLATION"/> courses are available.}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bff86f68bec76ac076b8ab5561826e0cdb58a27c" datatype="html">
+        <source><x id="ICU" equiv-text="{coursesTotal, plural,=0 {No courses available.}=1 {One course is available}other {A total of {{coursesTotal}} courses are available.}}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="09e49130ef5784465bf11390ac428c7e3ca307cb" datatype="html">
+        <source>Welcome to Angular Core Deep Dive Course</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Greet the user at the beginning of the course</note>
+        <note priority="1" from="meaning">welcome message</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

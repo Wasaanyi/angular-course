@@ -1,15 +1,26 @@
 <div class="top-menu">
 
-  <img class="logo"
+  <img class="logo" alt="Course Image"
        src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
 
 </div>
 
+
+
 <div>
 
-  <div class="courses">
+  <div class="demo" >
 
+    <button (click)="onEditCourse()" i18n >Edit course</button>
+    <div i18n>{coursesTotal, plural,=0 {No courses available.}=1 {One course is available}other {A total of {{coursesTotal}} courses are available.}}
+    </div>
+  </div>
+
+  <div class="courses" *ngIf="courses">
+    <h4 i18n="welcome message|Greet the user at the beginning of the course">Welcome to Angular Core Deep Dive Course</h4>
     <course-card *ngFor="let course of courses"
+                  type="Beginner"
+                 (courseChanged)="save($event)"
                  [course]="course">
 
       <course-image [src]="course.iconUrl"></course-image>
@@ -17,8 +28,6 @@
     </course-card>
 
   </div>
-
-
 </div>
 
 
